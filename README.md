@@ -49,9 +49,9 @@ I've kept detailed notes to reinforce my learning:
 
 Feel free to reach out or connect:
 
-- **GitHub**: (https://github.com/KevCareSA)
-- **LinkedIn**: (https://linkedin.com/in/😉lebohang-kevin-mokobane-516b892b)
-- **Twitter/X**: (https://twitter.com/CodingKevcare)
+- **GitHub**: [My Github](https://github.com/KevCareSA)
+- **LinkedIn**: [My LinkedIn](https://linkedin.com/in/😉lebohang-kevin-mokobane-516b892b)
+- **Twitter/X**: [My Twitter/X](https://twitter.com/CodingKevcare)
 
 ---
 
