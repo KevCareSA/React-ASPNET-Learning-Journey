@@ -1,6 +1,7 @@
 import React from "react";
+import BlackCoffee from "../assets/black.png";
 
-function hero() {
+function Hero() {
   return (
     <main className="bgImage">
       <section className="min-h-[750px] w-full">
@@ -19,7 +20,7 @@ function hero() {
               <div className="relative">
                 <div className="relative z-10 space-y-4">
                   <h1> Black Lifestyle Lovers, </h1>
-                  <h1 className="text-sm opacity-55 leading-loose">
+                  <h1 className="text-sm opacity-50 leading-loose">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Numquam molestiae fuga quis impedit suscipit sequi. Error
                     aliquam, laborum voluptate voluptatum amet explicabo. Commodi
@@ -33,8 +34,8 @@ function hero() {
               </div>
             </div>
             {/* Hero Text */}
-            <div className ="relative">
-              <img src={}>
+            <div className="relative">
+              <img src={BlackCoffee} />
             </div>
             {/* 3rd dive */}
           </div>
@@ -44,4 +45,4 @@ function hero() {
   );
 }
 
-export default hero;
+export default Hero;
