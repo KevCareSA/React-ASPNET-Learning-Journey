@@ -1,6 +1,6 @@
 # 🚀 React + ASP.NET Core Learning Journey
 
-Hi, I'm [Your Name]. Welcome to my learning journey repository, where I'm documenting my progress building full-stack applications using **React** (frontend) and **ASP.NET Core** (backend).
+Hi, I'm Kevin Mokobane. Welcome to my learning journey repository, where I'm documenting my progress building full-stack applications using **React** (frontend) and **ASP.NET Core** (backend).
 
 ## 🎯 **Tech Stack**
 
