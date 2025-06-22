@@ -1,4 +1,3 @@
-
 # 🚀 React + ASP.NET Core Learning Journey
 
 Hi, I'm [Your Name]. Welcome to my learning journey repository, where I'm documenting my progress building full-stack applications using **React** (frontend) and **ASP.NET Core** (backend).
@@ -13,18 +12,18 @@ Hi, I'm [Your Name]. Welcome to my learning journey repository, where I'm docume
 
 ## 📅 **Learning Roadmap & Progress**
 
-| Stage | Topic                         | Status         | Notes |
-|-------|-------------------------------|----------------|-------|
-| 1     | React Frontend Basics         | ☐ Done        | [Notes](- **[React Notes (external repo)](https://github.com/KevCareSA/LearningReact))**|
-| 2     | React Intermediate            | ☐ Pending      | |
-| 3     | ASP.NET Core Basics           | ☐ Pending      | |
-| 4     | Database & ORM                | ☐ Pending      | |
-| 5     | Authentication & Authorization| ☐ Pending      | |
-| 6     | React + ASP.NET Integration   | ☐ Pending      | |
-| 7     | Advanced React                | ☐ Pending      | |
-| 8     | Advanced ASP.NET              | ☐ Pending      | |
-| 9     | Full Deployment               | ☐ Pending      | |
-| 10    | Final Portfolio Project       | ☐ Pending      | |
+| Stage | Topic                          | Status    | Notes                                                                                    |
+| ----- | ------------------------------ | --------- | ---------------------------------------------------------------------------------------- |
+| 1     | React Frontend Basics          | ☐ Done    | [Notes](- **[React Notes (external repo)](https://github.com/KevCareSA/LearningReact))** |
+| 2     | React Intermediate             | ☐ Done    | [Notes](- **[React Notes (external repo)](https://github.com/KevCareSA/LearningReact))** |
+| 3     | ASP.NET Core Basics            | ☐ Pending |                                                                                          |
+| 4     | Database & ORM                 | ☐ Pending |                                                                                          |
+| 5     | Authentication & Authorization | ☐ Pending |                                                                                          |
+| 6     | React + ASP.NET Integration    | ☐ Pending |                                                                                          |
+| 7     | Advanced React                 | ☐ Pending |                                                                                          |
+| 8     | Advanced ASP.NET               | ☐ Pending |                                                                                          |
+| 9     | Full Deployment                | ☐ Pending |                                                                                          |
+| 10    | Final Portfolio Project        | ☐ Pending |                                                                                          |
 
 ---
 
@@ -32,7 +31,7 @@ Hi, I'm [Your Name]. Welcome to my learning journey repository, where I'm docume
 
 As I complete key milestones, I'll showcase them here.
 
-### **Project 1** – React Basics Project  
+### **Project 1** – React Basics Project
 
 - [Demo 1] [ - coming soon]
 
