@@ -42,7 +42,7 @@ As I complete key milestones, I'll showcase them here.
 I've kept detailed notes to reinforce my learning:
 
 - **[React Notes](01-Frontend-React-Basics/Notes.md)**
-- **[ASP.NET Core Notes (coming soon)](#)**
+- **[ASP.NET Core Notes (coming soon)]**
 
 ## 🔗 **Connect with Me**
 
