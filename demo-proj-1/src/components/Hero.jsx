@@ -14,7 +14,7 @@ function Hero() {
             {/* text section */}
             <div className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
               <h1 className="text-7xl font-bold leading-tight ml-14">
-                Blvck Tumbler
+                Blvck Coffee
               </h1>
               
               <div className="relative">
