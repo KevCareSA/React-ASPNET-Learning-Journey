@@ -42,6 +42,7 @@ function Hero() {
         </div>
       </section>
     </main>
+
   );
 }
 
