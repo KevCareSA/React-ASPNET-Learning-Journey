@@ -1,9 +1,20 @@
 import React from "react";
 import BlackCoffee from "../assets/black.png";
+import BgImage from "../assets/bg-slate.png";
+
+
+const bgImage = {
+  backgroundImage: `url(${BgImage})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+};
+
+
 
 function Hero() {
   return (
-    <main className="bgImage">
+    <main style={bgImage}>
       <section className="min-h-[750px] w-full">
         <div className="container">
           {/* Navbar Section*/}
@@ -23,8 +34,9 @@ function Hero() {
                   <h1 className="text-sm opacity-50 leading-loose">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Numquam molestiae fuga quis impedit suscipit sequi. Error
-                    aliquam, laborum voluptate voluptatum amet explicabo. Commodi
-                    cumque beatae voluptate, incidunt nemo mollitia tempore!
+                    aliquam, laborum voluptate voluptatum amet explicabo. 
+                    Commodi cumque beatae voluptate, incidunt nemo mollitia 
+                    tempore!
                   </h1>
                 </div>
               </div>
