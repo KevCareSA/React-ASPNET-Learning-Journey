@@ -1,15 +1,15 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import Hero from './components/Hero';
 
 
 function App() {
   return (
-    <div className="overflow-x-hidden">
-      <Hero />
-    
+    <div>
+      <Hero/>
     </div>
   
   );
 }
 
 export default App;
+
