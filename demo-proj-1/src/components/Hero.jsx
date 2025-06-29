@@ -61,9 +61,15 @@ const Hero = () => {
             {/* Orange Ring Circle */}
             <div className="h-[180px] w-[180px] absolute top-24 left-[51%] 
             border-primary border-[20px] rounded-full z-10"></div>
-            <div className="text-[140px] scale-120 font-bold text-darkOrange">
+            
+            {/* Big Text Section */}
+            <div>
+              <h1 className="text-[140px] scale-120 font-bold text-darkGray/40
+            leading-none">
               Blvck Coffee
+              </h1>
             </div>
+            
 
             {/* 3rd dive */}
           </div>
