@@ -25,7 +25,7 @@ const Hero = () => {
            place-items-center min-h-[850px]">
             <div className="grid grid-cols-1 bg-green-100 border border-black">
               {/* text section */}
-              <div className="text-orange-400 mt-[100px] md:mt-0 p-4 space-y-28">
+              <div className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
                 <h1 className="text-7xl font-bold leading-tight ml-14">
                   Blvck Coffee
                 </h1>
@@ -43,7 +43,8 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="absolute -top-6 -left-10 w-[250px] h-[190px] bg-gray-700/25">
+                <div className="absolute -top-6 -left-10 w-[250px] 
+                h-[190px] bg-gray-700/25">
 
                 </div>
               </div>
@@ -56,7 +57,7 @@ const Hero = () => {
             {/* Orange Ring Circle */}
             <div className="h-[180px] w-[180px] absolute top-24 -right-16 
             border-primary border-[20px] rounded-full z-10"></div>
-            <div className="text-[140px] scale-150 font-bold text-dark-orange">
+            <div className="text-[140px] scale-120 font-bold text-darkOrange">
               Blvck Coffee
             </div>
 
