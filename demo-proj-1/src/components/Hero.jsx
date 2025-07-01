@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="container">
           {/* Navbar Section*/}
           
-        {/* Hero Section */}
+        {/* Hero Section div*/}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
            place-items-center min-h-[850px]">
             <div className="grid grid-cols-1 bg-green-100 border border-black">
