@@ -3,7 +3,7 @@ import BlackCoffee from "../assets/black.png";
 import BgImage from "../assets/bg-slate.png";
 import Navbar from "./Navbar";
 import {motion} from "framer-motion";
-
+import {FaFacebookF,FaTwitter, FaInstagram} from "react-icons/fa";
 
 const bgImage = {
   backgroundImage: `url(${BgImage})`,
@@ -15,14 +15,16 @@ const bgImage = {
 
 
 const Hero = () => {
+
+  const [sidebar, setSidebar] = React.useState(false);
   return (
 
     <main style={bgImage}>
-      <section className="min-h-[750px] w-full">
+      <section className=" relative min-h-[750px] w-full">
         <div className="container">
           {/* Navbar Section*/}
-          <Navbar />
-          
+          <Navbar sidebar={sidebar} setSidebar={setSidebar} />
+
           {/* Hero Section div*/}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
            place-items-center min-h-[850px]">
@@ -76,23 +78,38 @@ const Hero = () => {
             </div>
             {/* Hero Image Section */}
             <div className="relative">
-              <img src={BlackCoffee} alt="" className="relative z-40 h-[400px] 
+              <motion.img 
+              
+              initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  type: "spring", 
+                  stiffness: 100, 
+                  damping: 10,
+                  delay: 0.4,
+                 }}
+
+              src={BlackCoffee} alt="" className="relative z-40 h-[400px] 
               md:h-[700px] img-shadow"/>
             
             {/* Orange Ring Circle */}
-             <div className="h-[180px] w-[180px] absolute top-24 left-[51%] 
-            border-primary border-[20px] rounded-full z-10"></div>
+             <motion.div 
+             
+             initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  type: "spring", 
+                  stiffness: 100, 
+                  damping: 10,
+                  delay: 0.8,
+                 }}
+             
+             className="h-[180px] w-[180px] absolute top-24 left-[51%] 
+            border-primary border-[20px] rounded-full z-10"></motion.div>
             
             {/* Big Text Section */}
-              <div className="absolute -top-20 left-[200px] z-[1]">
-                <h1 className="text-[140px] scale-120 font-bold text-darkGray/40
-              leading-none">
-                Blvck Coffee
-                </h1>
-              </div>
-            </div>
-            {/* 3rd dive section */}
-            <motion.div 
+              <motion.div 
+              
               initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ 
@@ -100,6 +117,24 @@ const Hero = () => {
                   stiffness: 100, 
                   damping: 10,
                   delay: 1.2,
+                 }}
+              
+              className="absolute -top-20 left-[200px] z-[1]">
+                <h1 className="text-[140px] scale-120 font-bold text-darkGray/40
+              leading-none">
+                Blvck Coffee
+                </h1>
+              </motion.div>
+            </div>
+            {/* 3rd dive section */}
+            <motion.div 
+              initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ 
+                  type: "spring", 
+                  stiffness: 100, 
+                  damping: 10,
+                  delay: 0.8,
                  }}
                  
             className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
@@ -128,6 +163,35 @@ const Hero = () => {
                 h-[190px] bg-gray-700/25"></div>
               </motion.div>
           </div>
+        </div>
+
+        {/* sidebar Menu Section */}
+        <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b
+        from-primary/80 to-primaryDark/80 backdrop-blur-sm z-10">
+          <div className="w-full h-full flex justify-center items-center">
+            <div className="flex flex-col justify-center items-center 
+            gap-6 text-white">
+              {/* line */}
+              <div className="w-[1px] h-[70px] bg-white"></div>
+              {/* social icons */}
+              <div className="inline-block p-2 rounded-full cursor-pointer 
+              border border-white">
+                <FaFacebookF className="text-2xl"/>
+              </div>
+              
+              <div className="inline-block p-2 rounded-full cursor-pointer 
+              border border-white">
+                <FaTwitter className="text-2xl"/>
+              </div>
+              
+              <div className="inline-block p-2 rounded-full cursor-pointer 
+              border border-white">
+                <FaInstagram className="text-2xl"/>
+              </div>
+
+              <div className="w-[1px] h-[70px] bg-white"></div>
+            </div>
+            </div>
         </div>
       </section>
     </main>
