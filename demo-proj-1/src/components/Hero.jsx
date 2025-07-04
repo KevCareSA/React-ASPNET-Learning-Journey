@@ -166,7 +166,12 @@ const Hero = () => {
         </div>
 
         {/* sidebar Menu Section */}
-        <div className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b
+        {sidebar && (
+          <motion.div 
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            // transition={{ type: "spring", stiffness: 100, damping: 10 }}
+            className="absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b
         from-primary/80 to-primaryDark/80 backdrop-blur-sm z-10">
           <div className="w-full h-full flex justify-center items-center">
             <div className="flex flex-col justify-center items-center 
@@ -192,7 +197,8 @@ const Hero = () => {
               <div className="w-[1px] h-[70px] bg-white"></div>
             </div>
             </div>
-        </div>
+        </motion.div >)
+        }
       </section>
     </main>
 
