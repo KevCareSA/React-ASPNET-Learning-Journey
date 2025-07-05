@@ -1,5 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Coffee1 from "../assets/coffee/coffee1.png";
+import Coffee3 from "../assets/coffee/coffee3.png";
+
+
+const ServiceData = [
+  {
+    id: 1,
+    image: Coffee1,
+    title: "Freshly Roasted Coffee",
+    description: "Experience the rich aroma and flavor of our freshly roasted coffee, sourced from the best beans."
+  }, 
+  
+  {
+    id: 2,
+    image: Coffee3,
+    title: "Hot Coffee",
+    description: "Experience the rich aroma and flavor of our freshly roasted coffee, sourced from the best beans."
+  },
+
+  {
+    id: 3,
+    image: Coffee1,
+    title: "Cold Brew Coffee",
+    description: "Experience the rich aroma and flavor of our freshly roasted coffee, sourced from the best beans."
+  }
+];
 
 const Services = () => {
   return (
@@ -20,13 +46,13 @@ const Services = () => {
           Fresh and <span className="text-primary">Quality Coffee</span>
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             type: "spring",
             stiffness: 150,
             damping: 10,
-            delay: 0.4,
+            delay: 0.6,
           }}
           className="text-sm opacity-50"
         >
@@ -35,6 +61,13 @@ const Services = () => {
         </motion.p>
       </div>
       {/* Card Section */}
+      <div>
+        {ServiceData.map((service) => (
+          <div>
+            <img src={service.image} alt="" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
