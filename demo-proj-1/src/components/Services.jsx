@@ -61,10 +61,16 @@ const Services = () => {
         </motion.p>
       </div>
       {/* Card Section */}
-      <div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {ServiceData.map((service) => (
-          <div>
-            <img src={service.image} alt="" />
+          <div className="text-center p-4 space-y-6">
+            <img src={service.image} alt="" 
+              className="img-shadow2 max-w-[200px] mx-auto
+              hover:scale-110 duration-300 cursor-pointer"/>
+            <div className="space-y-2">
+              <h1 className="text-2xl font-bold text-primary">{service.title}</h1>
+              <p className="text-darkGray">{service.description}</p>
+            </div>
           </div>
         ))}
       </div>
