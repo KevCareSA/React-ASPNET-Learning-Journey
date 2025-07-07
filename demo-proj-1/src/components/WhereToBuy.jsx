@@ -1,5 +1,5 @@
 import React from 'react'
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import WorldMap from '../assets/world-map.png'; // Adjust the path as necessary
 
 const WhereToBuy = () => {
@@ -9,25 +9,49 @@ const WhereToBuy = () => {
         place-items-center'>
             {/* form section */}
             <div className='space-y-8'>
-                <h1 className='text-4xl font-bold text-darkGray font-serif'>
+                <motion.h1 
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}  
+
+                className='text-4xl font-bold text-darkGray font-serif'
+                >
                     Buy our coffee from anywhere!
-                </h1>
-                <div className='flex items-center gap-4'>
+                </motion.h1>
+
+                <motion.div 
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}  
+                    className='flex items-center gap-4'
+                >
                         <input type="text" placeholder='Enter your name' 
                         className='input-style w-full lg:w-[150px]'/>
                         <input type="email" placeholder='Enter your email' 
                         className='input-style w-full' />
-                </div>
-                <div className='flex items-center gap-4'>
+                </motion.div>
+                <motion.div 
+                     initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.6 }} 
+                    
+                    className='flex items-center gap-4'
+                >
                         <input type="text" placeholder='Country' 
                         className='input-style w-full '/>
                         <input type="email" placeholder='Zip Code' 
                         className='input-style w-full lg:w-[150px]' />  
-                </div>
-                <button type="submit" 
-                        className='primary-btn'>
+                </motion.div>
+                <motion.button 
+
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6 }} 
+
+                    className='primary-btn'
+                >
                             Order Now
-                </button>
+                </motion.button>
             </div>
             {/* world map section */}
             <div className='col-span-2'>
