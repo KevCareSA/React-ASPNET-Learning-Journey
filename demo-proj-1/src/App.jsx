@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import Service from './components/Services';
 import WhereToBuy from './components/WhereToBuy';
+import AppBanner from './components/AppBanner';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Hero/>
       <Service />
       <WhereToBuy />
+      <AppBanner />
     </div>
   
   );
