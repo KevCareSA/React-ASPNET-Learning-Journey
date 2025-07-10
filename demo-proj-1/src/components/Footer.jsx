@@ -105,12 +105,17 @@ const Footer = () => {
                 <FaGoogle className="text-3xl hover:scale-105 duration-300" />
               </a>
             </div>
-          </div>
-          <div>
-            <h1>Payment Methods</h1>
-            <img src="{CreditCards}" alt="Credit Cards" />
+            <div>
+              <h1 className="text-xl font-semibold mb-2">Payment Methods</h1>
+              <img src={CreditCards} alt="Credit Cards" className="w-[80%]" />
+            </div>
           </div>
         </div>
+        {/* copyright section */}
+          <p className="text-white text-center mt-8 pt-8 border-t-2">
+           &copy; {new Date().getFullYear()} KevCare's Coder Coffee. All rights reserved.
+          </p>
+
       </div>
     </div>
   );
