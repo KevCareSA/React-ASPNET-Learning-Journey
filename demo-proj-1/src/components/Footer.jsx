@@ -1,5 +1,5 @@
 import React from "react";
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   FaFacebook,
   FaGoogle,
@@ -23,7 +23,17 @@ const Footer = () => {
             md:grid-cols-3 gap-8 "
         >
           {/* Company Info Section */}
-          <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.6,
+            }}
+
+            className="space-y-6"
+          >
             <h1 className="text-3xl font-bold uppercase">
               KevCare's Coder Coffee
             </h1>
@@ -42,51 +52,70 @@ const Footer = () => {
                 React Javascript City, CA 12345
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Footer Links Section */}
-          <div className="space-y-6">
+          <motion.div 
+             initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.4,
+              duration: 0.6,
+            }}
+
+             className="space-y-6">
             <h1 className="text-3xl font-bold">Quick Links</h1>
-              <div className="grid grid-cols-2 gap-3">
-                {/* first column section */}
-                <div>
-                  <ul className="space-y-2">
-                    <li className="hover:text-primary">
-                      <a href="#">Home</a>
-                    </li>
-                    <li className="hover:text-primary">
-                      <a href="#">About Us</a>
-                    </li>
-                    <li className="hover:text-primary">
-                      <a href="#">Contact Us</a>
-                    </li>
-                    <li className="hover:text-primary">
-                      <a href="#">Privacy Policy</a>
-                    </li>
-                  </ul>
-                </div>
-                {/* second column section */}
-                <div>
-                  <ul className="space-y-2">
-                    <li className="hover:text-primary">
-                      <a href="#">Terms of Service</a>
-                    </li>
-                    <li className="hover:text-primary">
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li className="hover:text-primary">
-                      <a href="#">Blog</a>
-                    </li>
-                    <li className="hover:text-primary">
-                      <a href="#">Support</a>
-                    </li>
-                  </ul>
-                </div>
+            <div className="grid grid-cols-2 gap-3">
+              {/* first column section */}
+              <div>
+                <ul className="space-y-2">
+                  <li className="hover:text-primary">
+                    <a href="#">Home</a>
+                  </li>
+                  <li className="hover:text-primary">
+                    <a href="#">About Us</a>
+                  </li>
+                  <li className="hover:text-primary">
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li className="hover:text-primary">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
               </div>
-          
-          </div>
+              {/* second column section */}
+              <div>
+                <ul className="space-y-2">
+                  <li className="hover:text-primary">
+                    <a href="#">Terms of Service</a>
+                  </li>
+                  <li className="hover:text-primary">
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li className="hover:text-primary">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li className="hover:text-primary">
+                    <a href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
           {/* Social Links Section */}
-          <div className="space-y-6">
+          <motion.div 
+            
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.6,
+              duration: 0.6,
+            }}
+            
+            className="space-y-6">
+
             <h1 className="text-3xl font-bold">Follow Us</h1>
             <div className="flex items-centre gap-3">
               <a href="#" className="hover:text-primary">
@@ -109,13 +138,22 @@ const Footer = () => {
               <h1 className="text-xl font-semibold mb-2">Payment Methods</h1>
               <img src={CreditCards} alt="Credit Cards" className="w-[80%]" />
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* copyright section */}
-          <p className="text-white text-center mt-8 pt-8 border-t-2">
-           &copy; {new Date().getFullYear()} KevCare's Coder Coffee. All rights reserved.
-          </p>
+        <p 
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.8,
+              duration: 0.6,
+            }}
 
+          className="text-white text-center mt-8 pt-8 border-t-2">
+          &copy; {new Date().getFullYear()} KevCare's Coder Coffee. All rights
+          reserved.
+        </p>
       </div>
     </div>
   );
