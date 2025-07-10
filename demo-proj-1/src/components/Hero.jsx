@@ -105,7 +105,9 @@ const Hero = () => {
                  }}
              
              className="h-[180px] w-[180px] absolute top-24 -right-16 
-            border-primary border-[20px] rounded-full z-10"></motion.div>
+              border-primary border-[20px] rounded-full z-10">
+
+            </motion.div>
             
             {/* Big Text Section */}
               <motion.div 
@@ -119,7 +121,7 @@ const Hero = () => {
                   delay: 1.2,
                  }}
               
-              className="absolute -top-20 left-[200px] z-[1]">
+              className="absolute -top-10 left-[440px] z-[1]">
                 <h1 className="text-[140px] scale-120 font-bold text-darkGray/40
               leading-none">
                 Blvck Coffee
@@ -139,7 +141,7 @@ const Hero = () => {
                  
             className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
                 <h1 className="opacity-0 text-7xl font-bold leading-tight ml-14">
-                  Blvck Coffeeeee
+                  Blvck Coffee
                 </h1>
                 
                 <div className="relative">
