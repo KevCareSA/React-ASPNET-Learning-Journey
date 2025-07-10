@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Service from './components/Services';
 import WhereToBuy from './components/WhereToBuy';
 import AppBanner from './components/AppBanner';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Service />
       <WhereToBuy />
       <AppBanner />
+      <Footer />
     </div>
   
   );
