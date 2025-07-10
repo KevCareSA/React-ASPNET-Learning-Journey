@@ -80,7 +80,7 @@ const Hero = () => {
             <div className="relative">
               <motion.img 
               
-              initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
                   type: "spring", 
@@ -104,13 +104,13 @@ const Hero = () => {
                   delay: 0.8,
                  }}
              
-             className="h-[180px] w-[180px] absolute top-24 left-[51%] 
+             className="h-[180px] w-[180px] absolute top-24 -right-16 
             border-primary border-[20px] rounded-full z-10"></motion.div>
             
             {/* Big Text Section */}
               <motion.div 
               
-              initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ 
                   type: "spring", 
@@ -138,8 +138,8 @@ const Hero = () => {
                  }}
                  
             className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
-                <h1 className="opacity-0 hidden text-7xl font-bold leading-tight ml-14">
-                  Blvck Coffee
+                <h1 className="opacity-0 text-7xl font-bold leading-tight ml-14">
+                  Blvck Coffeeeee
                 </h1>
                 
                 <div className="relative">
