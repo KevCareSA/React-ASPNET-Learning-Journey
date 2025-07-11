@@ -33,7 +33,7 @@ As I complete key milestones, I'll showcase them here.
 
 ### **Project 1** – React Basics Project
 
-- [Demo 1] [ - coming soon]
+- [Demo 1] [Responsive Coffee Website](https://coffee-demo1.netlify.app/)
 
 ---
 
