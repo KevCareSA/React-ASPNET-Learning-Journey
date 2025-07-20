@@ -1,6 +1,6 @@
 import React from 'react'
 import backgroundImage from '../assets/homeimg.webp'
-//import heroimg from '../assets/heroimg.png'
+import heroimg from '../assets/heroimg.png'
 import {slideUpVariants, ZoomInVariants} from './animation'
 import { motion } from 'framer-motion'
 
@@ -57,6 +57,15 @@ const Hero = () => {
           </motion.div>
 
         </motion.div>
+        <div className='w-[40%] flex flex-col justify-end items-end'>
+          <motion.img 
+            initial={'hidden'}
+            whileInView={'visible'}
+            variants={ZoomInVariants}
+            src={heroimg}  
+            alt='hero image' 
+            className='lg:h-[400px] h-[300px] lg:mt-[290px]' />
+        </div>
     </div>
   )
 }
