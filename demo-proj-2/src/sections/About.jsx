@@ -22,10 +22,37 @@ const About = () => {
         <motion.h1 
           variants={slideUpVariants}
           className='text-white text-[40px] font-bold'>
-          About Us
+          SALLY CONSTRUCTION AND PROJECTS
         </motion.h1>
+        <div className='w-[400px] h-[6px] bg-yellow-500'>
+        </div>
+        <motion.p 
+          variants={slideUpVariants}
+          className='text-3xl italic text-gray-50 text-[20px]'>
+          We are a leading construction company dedicated to building and 
+          constructing dreams together. Our team of experts is committed 
+          to delivering high-quality projects that exceed expectations.
+        </motion.p>
 
       </motion.div>
+      <div>
+        <p>
+          At Sally Construction and Projects, we believe in the power of 
+          collaboration and innovation. Our mission is to turn your visions 
+          into reality, whether it's residential, commercial, or industrial 
+          projects. With a focus on quality, safety, and sustainability, we 
+          strive to create spaces that inspire and endure.
+
+          Our experienced team is equipped with the latest technology and
+          industry knowledge to ensure that every project is executed with
+          precision and care. From the initial design phase to the final
+          touches, we work closely with our clients to understand their needs
+          and deliver results that not only meet but exceed their expectations. 
+          Join us on this journey of building dreams together, where your
+          satisfaction is our top priority.
+        
+        </p>
+      </div>
 
     </div>
   )
