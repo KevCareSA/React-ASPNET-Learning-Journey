@@ -30,7 +30,7 @@ const Hero = () => {
             We Build Your Dreams
           </motion.h1>
           <div className='w-[400px] h-[6px] bg-yellow-500'>
-            <p className='text-white text-[20px]'>Building And Constructing Dreams Together</p>
+            <p className='text-white text-[20px] mt-1'>Building And Constructing Dreams Together</p>
           </div>
 
           <motion.div
