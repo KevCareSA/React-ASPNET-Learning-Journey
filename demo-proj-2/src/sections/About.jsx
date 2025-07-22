@@ -33,10 +33,15 @@ const About = () => {
           constructing dreams together. Our team of experts is committed 
           to delivering high-quality projects that exceed expectations.
         </motion.p>
-
       </motion.div>
-      <div>
-        <p>
+
+      <motion.div
+        initial={'hidden'}
+        whileInView={'visible'}
+        variants={slideUpVariants}
+        className='lg:w-[40%] w-full flex flex-col justify-center items-start *
+        gap-5'>
+        <p className='text-white text-lg text-'>
           At Sally Construction and Projects, we believe in the power of 
           collaboration and innovation. Our mission is to turn your visions 
           into reality, whether it's residential, commercial, or industrial 
@@ -52,7 +57,15 @@ const About = () => {
           satisfaction is our top priority.
         
         </p>
-      </div>
+        <motion.button
+          initial={'hidden'}
+          whileInView={'visible'}
+          variants={slideUpVariants}
+          className='bg-yellow-500 hover:bg-white hover:text-black transition-all duration-100 
+          px-4 py-1.5 rounded-lg text-white font-bold'>
+          READ MORE
+        </motion.button>
+      </motion.div>
 
     </div>
   )
