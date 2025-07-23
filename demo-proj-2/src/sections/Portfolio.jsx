@@ -25,7 +25,7 @@ const Portfolio = () => {
           initial={'hidden'}
           whileInView={'visible'}
           variants={{slideUpVariants}}
-          className='lg:w-[80%] w-[90%] m-auto py-[60px] flex 
+          className='lg:w-[80%] w-[90%] m-auto py-[20px] flex 
           flex-col justify-between items-center gap-[20px]'
         >
             <motion.h1
