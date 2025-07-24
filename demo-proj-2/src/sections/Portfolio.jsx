@@ -44,6 +44,23 @@ const Portfolio = () => {
     
             <motion.div className='w-[400px] h-[6px] bg-yellow-500'>
             </motion.div>
+
+            <motion.div
+              initial={'hidden'}
+              whileInView={'visible'}
+              variants={{ZoomInVariants}}
+              className='w-full m-auto grid lg:grid-cols-4 grid-cols-1'
+            >
+              <img src={project1} alt="" />
+              <img src={project2} alt="" />
+              <img src={project3} alt="" />
+              <img src={project4} alt="" />
+              <img src={project5} alt="" />
+              <img src={project6} alt="" />
+              <img src={project7} alt="" />
+              <img src={project8} alt="" />
+
+            </motion.div>
         </motion.div>
       </motion.div>
 
