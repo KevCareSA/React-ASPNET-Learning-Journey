@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { slideUpVariants, ZoomInVariants } from './animation' 
+import { planning } from '../export'
 //import { allservices } from '../export' // Importing all services from export.js
 
 const Work = () => {
@@ -34,10 +35,21 @@ const Work = () => {
           initial={'hidden'}
           whileInView={'visible'}
           variants={ZoomInVariants}
-          className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center
+          className='w-full grid lg:grid-cols-4 grid-cols-1 justify-center
           items-start gap-[20px] mt-[30px]'
           >
-            
+            {
+              planning.map((item, index) => (
+                <div key={index} className='flex flex-col justify-center 
+                items-center gap-5 p-6 border-yellow-500 round-mg'>
+                  <div>
+                      <item.icon className='size-[80px] bg-yellow-500 
+                    hover:bg-black hover:fill-white p-4 rounded-full 
+                    cursor-pointer'/>
+                  </div>
+                </div>
+              ))
+            }
         </motion.div>
 
       </motion.div>
