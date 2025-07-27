@@ -58,46 +58,46 @@ export const planning = [
     icon: IoDocumentTextSharp,
     title: "planning",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Planning is the first step in our process, where we outline the project scope and objectives.",
   },
   {
     icon: MdOutlineDesignServices,
     title: "design",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Design is the second step in our process, where we create detailed plans and specifications.",
   },
   {
     icon: FaRegBuilding,
     title: "building",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Building is the third step in our process, where we execute the construction phase.",
   },
   {
     icon: FaSitemap,
     title: "finish",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Finish is the final step in our process, where we complete the project and ensure everything meets quality standards.",
   },
 ];
 
 export const clients = [
   {
     image: client1,
-    name: "Alex Parker",
+    name: "Owethu Masilela",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Constructor",
   },
   {
     image: client2,
-    name: "Drew James",
+    name: "Bathabile Mahote",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Architect",
   },
   {
     image: client3,
-    name: "Sam Peterson",
+    name: "Mpho uBafo",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Builder",
