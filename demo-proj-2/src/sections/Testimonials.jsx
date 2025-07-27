@@ -1,11 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { slideUpVariants, ZoomInVariants } from './animation'
-import { planning } from '../export'
+import { clients } from '../export'
+import { IoTerminalSharp } from 'react-icons/io5'
 
 const Testimonials = () => {
   return (
-    <div id='work' className='w-full bg-white'>
+    <div id='clients' className='w-full '>
       <motion.div
         initial={'hidden'}
         whileInView={'visible'}
@@ -17,44 +18,53 @@ const Testimonials = () => {
           variants={slideUpVariants}
           className='text-yellow-500 text-3xl'
         >
-          THIS IS
+          TESTIMONIALS
         </motion.h1>
         <motion.h1
           variants={slideUpVariants}
           className='text-black uppercase text-[40px] font-bold text-center'
         >
-          OUR WORKING PROCESS 
+          WHAT OUR CLIENTS SAY <br /> ABOUT US
         </motion.h1>
 
         <motion.div className='w-[400px] h-[6px] bg-yellow-500'>
         </motion.div>
 
-        {/* Make div for services mapping from export js file */}
+        
         <motion.div
           initial={'hidden'}
           whileInView={'visible'}
           variants={ZoomInVariants}
-          className='w-full grid lg:grid-cols-4 grid-cols-1 justify-center
-          items-start gap-[20px] mt-[30px]'
+          className='lg:w-full w-[90%] grid lg:grid-cols-3 grid-cols-1 justify-center
+          items-start gap-8 mt-[30px]'
           >
             {
-              planning.map((item, index) => (
+              clients.map((item, index) => (
                 <div key={index} className='flex flex-col justify-center 
-                items-center gap-5 p-6 border-2 border-yellow-500 round-mg'>
-                  <div>
-                      <item.icon className='size-[80px] bg-yellow-500 
-                    hover:bg-black hover:fill-white p-4 rounded-full 
-                    cursor-pointer'/>
+                items-center '>
+                  <div className='border-2 border-white hover:bg-yellow-500 
+                  pb-[100px] pt-[30px]'>
+                    <p className='text-white text-lg text-center'>
+                      {item.about}
+                    </p>
                   </div>
-                  <h1 className='text-2xl uppercase font-bold'>
-                    {item.title}
-                  </h1> 
-                  <p className='text-[20px] text-center text-gray-500'>
-                    {item.about}
-                  </p>
+                  <div className='flex flex-col justify-center items-center 
+                  gap-[5px]'
+                  >
+                    <img className='mt-[-50px]' src={item.image} 
+                    alt="client image" />
+                    <h1 className='text-[27px] text-white uppercase font-semibold'>
+                      {item.name} 
+                    </h1>
+                    <h1 className='text-[20px] text-yellow-500'>
+                      {item.post}
+                    </h1>
+                  </div>
+                  
                 </div>
               ))
             }
+
         </motion.div>
 
       </motion.div>
