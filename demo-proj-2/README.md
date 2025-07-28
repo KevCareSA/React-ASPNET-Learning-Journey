@@ -1,12 +1,81 @@
-# React + Vite
+# 🏗️ Sally Construction & Projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web experience for showcasing a construction company using React, Vite, Tailwind CSS, and Framer Motion. Built with clean component structure and smooth animations — from the landing hero to portfolio and contact.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+* ⚛️ React + Vite (Fast bundling)
+* 🎨 Tailwind CSS (Utility-first styling)
+* 💫 Framer Motion (Beautiful section animations)
+* 📦 React Icons & React Scroll
+* 📁 Modular file structure for scalability
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── assets/            → Images & icons (pictures, projects, etc.)
+├── sections/          → All page sections (Hero, About, Service, Work, etc.)
+├── App.jsx            → Main layout file
+├── export.js          → Shared planning and client data
+├── animation.js       → Reusable animation variants for Framer Motion
+├── index.css          → Tailwind directives & global styles
+└── main.jsx           → React root entry point
+```
+
+---
+
+## 🌟 Sections Included
+
+| Section          | Description                                           |
+| ---------------- | ----------------------------------------------------- |
+| 🧭 Hero          | Animated background with intro message and CTA button |
+| 🧱 About         | Company overview with animated text                   |
+| 🔧 Services      | Coffee-style card layout for offerings                |
+| 📊 Work          | Grid of planning phases with icons and descriptions   |
+| 🎨 Portfolio     | Animated gallery of project thumbnails                |
+| 💬 Testimonials  | Animated feedback cards from clients                  |
+| 📞 Contact       | Animated call-to-action layout                        |
+| 📌 Header/Footer | Navigation and sticky layout components               |
+
+---
+
+## ✨ Animation Features
+
+* Entry animations (slideUp, zoomIn) on scroll
+* Staggered motion for text and image blocks
+* Hover effects on interactive elements
+
+---
+
+## 📦 Installation
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## ✅ Development Notes
+
+* Tailwind set up via postcss.config.cjs & tailwind.config.cjs
+* Variants stored in animation.js and applied per section
+* Scroll behavior handled by react-scroll
+* Asset icons and client data managed in export.js
+
+---
+
+## 📸 Preview (Coming Soon)
+
+\[Insert a screenshot or deploy link here]
+
+---
+
+👤 Author
+Developed by KevCare
+🔗 GitHub: KevCareSA
