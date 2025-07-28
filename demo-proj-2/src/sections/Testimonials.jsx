@@ -44,7 +44,8 @@ const Testimonials = () => {
                 items-center '>
                   <div className='border-2 border-white hover:bg-yellow-500 
                   pb-[100px] pt-[30px]'>
-                    <p className='text-white text-lg text-center'>
+                    <p className='text-white hover:text-black text-lg 
+                    text-center'>
                       {item.about}
                     </p>
                   </div>
