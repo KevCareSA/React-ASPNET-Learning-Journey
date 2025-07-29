@@ -28,23 +28,20 @@ const Header = () => {
   return (
     <nav className='w-full bg-white justify-between items-center gap-1 
     lg:px-16 px-6 py-4 sticky top-0 z-50 shadow-md'>
-      <h1 className='text-black md:text-4xl text-3xl font-bold font-rubik'>
-        Sally 
-         <span className='text-yellow-500 italic'
-        > Construction And Projects
-        </span> 
+      <h1 className='text-black md:text-3xl text-2xl font-bold font-rubik'>
+        Sally<span className='text-yellow-500 italic'> Construction And Projects</span> 
       </h1>
 
       <ul className='lg:flex justify-center items-center gap-6 hidden'>
         {navItems.map(({link, path}) => (
           <Link key={path} className='text-black uppercase font-bold 
-          cursor-pointer p-2 rounded-full hover:bg-yellow-500 hover:text-black text-[15px]'
+          cursor-pointer p- rounded-full hover:bg-yellow-500 hover:text-black text-[15px]'
           to={path} spy={true} offset={-100} smooth={true}>{link}</Link>
         ))}
       </ul>
       
       <button className='bg-yellow-500 hover:bg-black hover:text-white
-      text-black px-10 py-3 rounded-full font-semibold transform hover:scale-105 
+      text-black px-20 py-3 rounded-full font-semibold transform hover:scale-105 
         transition-transform duration-300 cursor-pointer md:flex hidden'>
         REACH US
       </button>
