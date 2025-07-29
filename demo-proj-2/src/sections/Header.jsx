@@ -45,6 +45,31 @@ const Header = () => {
         transition-transform duration-300 cursor-pointer md:flex hidden'>
         REACH US
       </button>
+
+      {/* Mobile Menu */}
+      <div className='flex justify-between items-center lg:hidden mt-3' 
+      onClick={toggleMenu}>
+        <div>
+          {isMenuOpen ? (
+            <FaXmark className='text-yellow-500 text-3xl cursor-pointer' />
+          ) : (
+            <FaBars className='text-yellow-500 text-3xl cursor-pointer' />
+          )}
+        </div>
+      </div> 
+
+      <div className={`${isMenuOpen ? 'flex' : 'hidden'} w-full h-fit 
+        bg-yellow-500 p-4 absolute top-[70px] left-0 z-50 flex-col 
+          items-center gap-4`} onClick={closeMenu}>
+          <ul className='flex flex-col justify-center items-center gap-2 w-full'>
+            {navItems.map(({link, path}) => (
+              <Link key={path} className='text-black uppercase font-bold 
+              cursor-pointer p-3 rounded-full hover:bg-white hover:text-black text-[15px]'
+              to={path} spy={true} offset={-100} smooth={true}>{link}</Link>
+            ))}
+          </ul>
+
+      </div>
      
     </nav>
   )
