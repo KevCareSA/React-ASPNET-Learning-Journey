@@ -33,7 +33,7 @@ This project is part of my larger **React + ASP.NET Core learning journey**, whe
 
 ## 📸 Screenshots
 
-![Screenshot](demo-proj-1/src/assets/image.png)
+![Screenshot](./src/assets/image.png)
 
 ---
 
