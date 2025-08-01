@@ -83,7 +83,7 @@ export const planning = [
 export const clients = [
   {
     image: client1,
-    name: "Owethu Masilela",
+    name: "Owethu Moti",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Constructor",
@@ -97,7 +97,7 @@ export const clients = [
   },
   {
     image: client3,
-    name: "Mpho uBafo",
+    name: "Lwandle Mandela",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
     post: "Builder",
