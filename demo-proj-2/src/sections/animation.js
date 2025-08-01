@@ -4,7 +4,7 @@ export const slideUpVariants = {
     opacity: 1,
     transition: { 
         staggerChildren: 2,
-        duration: 1.5,
+        duration: 1.2,
         ease: "easeInOut",
     },
   },
@@ -17,7 +17,7 @@ export const ZoomInVariants = {
         opacity: 1,
         transition: {
             staggerChildren: 2,
-            duration: 1.2,
+            duration: 1.0,
             ease: "easeInOut",
         },
     },
