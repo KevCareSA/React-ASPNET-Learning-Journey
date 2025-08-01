@@ -52,7 +52,7 @@ const Testimonials = () => {
                   <div className='flex flex-col justify-center items-center 
                   gap-[5px]'
                   >
-                    <img className='mt-[-50px]' src={item.image} 
+                    <img className='mt-[-50px] rounded-full' src={item.image} 
                     alt="client image" />
                     <h1 className='text-[27px] text-white uppercase font-semibold'>
                       {item.name} 
