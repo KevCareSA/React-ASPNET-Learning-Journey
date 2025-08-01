@@ -10,7 +10,8 @@ const Hero = () => {
   return (
     <div id='hero' className='bg-black w-full lg:h-[700px] h-fit 
       m-auto pt-[60px] lg:pt-[0px] lg:px-[150px] px-[20px] flex justify-between 
-      items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center' 
+      items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center
+      bg-no-repeat sm:bg-top' 
       style={{ backgroundImage: `url(${backgroundImage})` }}>
         <motion.div
         initial={'hidden'}
@@ -30,42 +31,53 @@ const Hero = () => {
             We Build Your Dreams
           </motion.h1>
           <div className='w-[400px] h-[6px] bg-yellow-500'>
-            <p className='text-white text-[20px] mt-1'>Building And Constructing Dreams Together</p>
           </div>
+          <p className='text-white text-[20px] mt-1'>Building And Constructing 
+            Dreams Together</p>
 
           <motion.div
             initial={'hidden'}
             whileInView={'visible'}
             variants={slideUpVariants}
-            className='flex justify-center items-center gap-5'
-        >
+            className='flex flex-col sm:flex-row justify-center sm:justify-start items-center gap-4 sm:gap-5 w-full'
+          >
             <motion.button
               variants={ZoomInVariants}
               className='bg-yellow-500 hover:bg-white hover:text-black transition-all duration-300 
-              px-4 py-1.5 rounded-lg text-white font-bold'
+              px-6 py-2 rounded-lg text-white font-bold w-full sm:w-auto'
               >
                 READ MORE
             </motion.button>
             <motion.button
               variants={ZoomInVariants}
-              className='bg-white hover:border-yellow-500 
-              hover:text-yellow-500 transition-all duration-300 border-2
-              px-4 py-1.5 rounded-lg text-black font-bold'
+              className='bg-white hover:border-yellow-500 hover:text-yellow-500 transition-all duration-300 
+              border-2 px-6 py-2 rounded-lg text-black font-bold w-full sm:w-auto'
+
               >
                 CONTACT US
             </motion.button>
           </motion.div>
 
         </motion.div>
-        <div className='w-[40%] flex flex-col justify-end items-end'>
+        <div className='w-full lg:w-[50%] flex justify-center lg:justify-end'>
           <motion.img 
             initial={'hidden'}
             whileInView={'visible'}
             variants={ZoomInVariants}
             src={heroimg}  
             alt='hero image' 
-            className='lg:h-[400px] h-[300px] lg:mt-[290px]' />
+            className='h-[250px] sm:h-[300px] lg:h-[350px] mt-5 lg:mt-[350px]' 
+          />
         </div>
+        {/* <div className='w-[50%] flex flex-col justify-end items-end'>
+          <motion.img 
+            initial={'hidden'}
+            whileInView={'visible'}
+            variants={ZoomInVariants}
+            src={heroimg}  
+            alt='hero image' 
+            className='lg:h-[350px] h-[400px] lg:mt-[350px]' />
+        </div> */}
     </div>
   )
 }
