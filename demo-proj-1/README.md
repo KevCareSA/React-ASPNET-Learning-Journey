@@ -33,7 +33,7 @@ This project is part of my larger **React + ASP.NET Core learning journey**, whe
 
 ## 📸 Screenshots
 
-*Add a screenshot here when the layout is done!*
+![Screenshot](./src/assets/image.png)
 
 ---
 

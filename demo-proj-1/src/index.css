@@ -9,6 +9,15 @@
     }
 
     .img-shadow-2 {
-        filter: drop-shadow(10px 30px 15px #303030);
+        filter: drop-shadow(10px 30px 15px #3030307a);
+    }
+
+    .input-style {
+        @apply px-4 py-2 border-[1px]
+        border-gray-400 rounded-md
+    }
+    .primary-btn {
+        @apply bg-primary text-white 
+        px-4 py-2 rounded-md hover:bg-primaryDark duration-200;
     }
 }
