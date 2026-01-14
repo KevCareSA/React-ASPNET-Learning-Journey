@@ -22,8 +22,6 @@ Every JSX element belongs to one or more of these 8 **core categories**:
 
 ## 🌳 FULL CATEGORY TREE (ALL JSX ELEMENTS)
 
-*(clean, structured, PyQt-style)*
-
 ```js
 JSX ELEMENTS
    │
