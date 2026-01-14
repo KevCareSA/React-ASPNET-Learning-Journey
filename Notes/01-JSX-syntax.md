@@ -1,8 +1,6 @@
 # 1. 🌟 JSX Syntax
 
-3# 🌳 **THE OFFICIAL FULL JSX ELEMENT CATEGORIES**
-
-*(This is the TRUE grouping — the browser’s actual content model)*
+## 🌳 **THE OFFICIAL FULL JSX ELEMENT CATEGORIES**
 
 Every JSX element belongs to one or more of these 8 **core categories**:
 
@@ -20,7 +18,7 @@ Every JSX element belongs to one or more of these 8 **core categories**:
 
 ---
 
-## 🌳 FULL CATEGORY TREE (ALL JSX ELEMENTS)
+## 🌳 FULL EXPANDED CATEGORY JSX ELEMENTS TREE 
 
 ```js
 JSX ELEMENTS
