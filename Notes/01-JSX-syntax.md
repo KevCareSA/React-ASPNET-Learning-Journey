@@ -145,7 +145,7 @@ JSX is just **cleaner syntax** for creating UI descriptions.
 
 A JSX element has **three parts**:
 
-```
+```jsx
 <type attributes>
   children
 </type>
@@ -186,7 +186,7 @@ React converts it to:
 
 **Flow:**
 
-```
+```jsx
 JSX → JavaScript Object → UI
 ```
 
@@ -198,7 +198,7 @@ This is the **most important React concept**.
 
 JSX forms a **UI tree**:
 
-```
+```jsx
 <main>
  ├─ <h1>Hello</h1>
  ├─ <p>Welcome</p>
@@ -241,7 +241,7 @@ function MyUI() {
 
 ### 8. Types of JSX Elements
 
-```
+```jsx
 JSX Elements
 │
 ├── Display Elements
