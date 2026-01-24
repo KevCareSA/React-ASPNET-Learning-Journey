@@ -103,7 +103,7 @@ JSX ELEMENTS
 
 ---
 
-## JSX Elements (Clean Notes)
+## JSX Elements 
 
 ### 1. What is a JSX Element?
 
