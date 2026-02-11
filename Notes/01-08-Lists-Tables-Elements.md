@@ -1094,4 +1094,3 @@ function UserTable({ users }) {
 ✅ Provide alternative formats for complex tables  
 
 ---
-
