@@ -28,12 +28,12 @@ React Syntax
 │     │     ├── Text content
 │     │     └── Expressions { }
 │     │
-│     ├── Self-closing tags
+│     ├── 1.4) Self-closing tags
 │     │     ├── <img />
 │     │     ├── <input />
 │     │     └── <br />
 │     │
-│     └── Expressions in JSX
+│     └── 1.5) Expressions in JSX
 │           ├── { variable }
 │           ├── { functionCall() }
 │           ├── { condition && <UI /> }
